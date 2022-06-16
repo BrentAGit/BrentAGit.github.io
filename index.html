@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Brent</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">What I do</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Brent Andries</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">front-end developer</p>
+            <img src="img/BrentA.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+        </section>
+        
+        
+        <!-- What I do -->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>JavaScript, HTML & CSS</h3>
+                    <p>As the building blocks of the web, these technologies are essential when it comes to making functioning and scalable websites. I personally love to discover and use new frameworks that help create a better workflow for the developer.</p>
+                </div> 
+                
+                <div class="service">
+                    <h3>Responsive UI Design</h3>
+                    <p>Using CSS and other external frameworks, I try to create User Interfaces that not only look good, but are also responsive for all screen-sizes and offer a great user experience. </p>
+                </div>
+                
+                <div class="service">
+                    <h3>React</h3>
+                    <p>One of the big JavaScript frameworks, React has become widely used for building component based and interactive user interfaces. With it's many useful features, it helps developers get work done fast and efficient.</p>
+                </div> 
+            </div> 
+            
+            <a href="#work" class="btn">My Projects</a>
+        </section>
+        
+        
+        <!-- About me -->
+        <section class="about-me" id="about">
+           <h2 class="section__title section__title--about">Who I am</h2>
+           <p class="section__subtitle section__subtitle--about">Junior front-end developer from Bornem</p>
+           
+           <div class="about-me__body">
+               <p>I am a junior front-end developer with a recently finished Associate's Degree in (full-stack) Computer Programming. Next to that degree I am also currently enrolled on a Frontend Developer Career Path course using <a href="https://scrimba.com">Scrimba</a>.</p>
+               <p>Despite being a junior developer, I am eager to learn more from others and gain experience whithin this industry!</p>
+           </div>
+           
+           <img src="img/BrentA.jpg" alt="Jane leaning against a bus" class="about-me__img">
+        </section>
+        
+        <!-- My Work -->
+        <section class="my-work" id="work">
+            <h2 class="section__title section__title--work">My Projects</h2>
+            <p class="section__subtitle section__subtitle--work">A selection of some projects I have made</p>
+            
+            <div class="projects">
+                <div class="projects__card">
+                    <img class="card__image" src="img/HandTrack.png" alt="An application that tracks your hand using the webcam">
+                    <h3 class="card__title">Project Handtrack</h3>
+                    <p class="card__description">A project I made during my second internship. It is made in React and uses TensorflowJS and handposejs to track the user's hand, while also displaying certain gestures when detected.</p>
+                    <a href="handtrack.html" class="btn btn--card">Read more</a>
+                </div>
+                <div class="projects__card">
+                    <img class="card__image" src="img/Dashboard.png" alt="An application that tracks your hand using the webcam">
+                    <h3 class="card__title">Responsive UI Designs</h3>
+                    <p class="card__description">A library of various components I made when practicing making responsive UI designs. Some of these were made during my course on Scrimba, others using example designs that i then remade.</p>
+                    <a href="responsiveUIDesign.html" class="btn btn--card">Read more</a>
+                </div>
+                <div class="projects__card">
+                    <img class="card__image" src="img/Portfolio.jpg" alt="An application that tracks your hand using the webcam">
+                    <h3 class="card__title">This Portfolio</h3>
+                    <p class="card__description">I initially started this portfolio as part of one of the modules of my online course, but continued working on it to make it a full-fledged website about myself and my journey as a programmer.</p>
+                    <a href="thisPortfolio.html" class="btn btn--card">Read more</a>
+                </div>
+            </div>
+        </section>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:brent.andries2000@gmail.com" class="footer__link">brent.andries2000@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/brent-andries-b638851b9/">
+                        <i class="fab fa-linkedin"></i>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/BrentAGit">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>

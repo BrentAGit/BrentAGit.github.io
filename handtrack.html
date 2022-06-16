@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio Brent</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700|Roboto+Slab:400,700&display=swap" rel="stylesheet"> 
+        
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">What I do</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Project <strong>HandTrack</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Using AI to guess gestures</p>
+            <img src="img/Handtrack2.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+                <p>Project: Hand Detection (or Project HandTrack) is the main project i worked on during my internship at <a href="https://www.two-point-o.be/">II.O</a>. It uses AI frameworks like TensorFlow.js and handpose to draw a mesh on the users video via webcam, and takes the data of said mesh to see which gesture the user's hand is making.</p>
+                <video class="portfolio-item-individual__video" autoplay loop src="video/Handtrack.mp4"></video>
+                <p><strong>Used technologies:</strong> React, TensorFlowJS, handtrackjs, fingerpose</p>
+            <div class="flex-wrapper">
+                <a href="#" class="btn btn--portfolio">Github repository</a>
+            </div>
+        </div>
+        
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:brent.andries2000@gmail.com" class="footer__link">brent.andries2000@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/brent-andries-b638851b9/">
+                        <i class="fab fa-linkedin"></i>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/BrentAGit">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
