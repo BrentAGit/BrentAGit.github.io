@@ -440,6 +440,7 @@ header {
     
     .projects__card {
         max-width: 400px;
+        min-width: 320px;
         background-color: var(--clr-light);
         border-radius: 2em;
         color: var(--clr-dark);
