@@ -312,7 +312,7 @@ header {
 }
 
 .service {
-    width: 400px;
+    max-width: 400px;
     margin: 0 auto 3em;
 }
 
@@ -325,6 +325,7 @@ header {
     
     .service {
         margin-bottom: 0;
+        width: 400px;
     }
 }
 
