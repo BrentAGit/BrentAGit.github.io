@@ -250,7 +250,7 @@ header {
     display: inline-block;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 670px) {
     .intro {
         display: grid;
         width: min-content;
@@ -312,20 +312,19 @@ header {
 }
 
 .service {
-    max-width: 500px;
-    margin: 0 auto;
+    width: 400px;
+    margin: 0 auto 3em;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 1200px) {
     .services {
         display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 2em 10em;
+        gap: 3em;
     }
     
-    .service + .service {
-        margin-left: 2em;
+    .service {
+        margin-bottom: 0;
     }
 }
 
@@ -375,7 +374,10 @@ header {
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
+    background: #434343;
+    background: -webkit-linear-gradient(top left, #434343, #111111);
+    background: -moz-linear-gradient(top left, #434343, #111111);
+    background: linear-gradient(to bottom right, #434343, #111111);
     color: var(--clr-light);
     text-align: center;    
 }
@@ -392,14 +394,14 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 600px;
+    max-width: 550px;
     background-color: var(--clr-light);
     border-radius: 2em;
     color: var(--clr-dark);
     overflow: hidden;
     transition: transform 200ms ease-in-out;
     margin-bottom: 2em;
-    min-height: 550px;
+    min-height: 500px;
 }
 
 .card__description {
@@ -409,7 +411,7 @@ header {
 
 .card__title {
     color: var(--clr-accent);
-    margin-bottom: -2em;
+    margin-bottom: -1.5em;
 }
 
 .card__title::after {
@@ -446,6 +448,8 @@ header {
         color: var(--clr-dark);
         overflow: hidden;
         transition: transform 200ms ease-in-out;
+        min-height: 550px;
+        max-width: 600px;
     }
 
     .projects__card:nth-child(2){
@@ -474,7 +478,7 @@ header {
 /* footer */
 
 .footer {
-    background: #111;
+    background: rgb(5, 5, 5);
     color: var(--clr-accent);
     text-align: center;
     padding: 2.5em 0;
